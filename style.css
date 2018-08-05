@@ -1,9 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 .main-title {
     padding-top: 230px;
+    padding-bottom: 40px;
     font-size: 45px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+body {
+    font-family: "Open Sans";
 }
 
 .row-title {
@@ -54,6 +64,11 @@
     padding-right: 0;
 }
 
+.b-column {
+    padding-top: 90px;
+    width: 25%;
+}
+
 .column1 {
     text-align: center;
 }
@@ -83,6 +98,7 @@
 
 .block {
     padding-top: 100px;
+    margin-bottom: 20px;
     color: #666666;
     font-family: Merriweather;
     font-style: italic;
@@ -90,6 +106,7 @@
 
 .title-block {
     font-size: 44px;
+    margin-bottom: 20px;
     font-weight: 600;
     letter-spacing: .02em;
     text-transform: uppercase;
@@ -160,11 +177,13 @@
 
 .title {
     color: #ffffff;
+    margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .sub-title {
     color: #ffffff;
+    margin-bottom: 10px;
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 0.5em;
@@ -205,12 +224,23 @@
     padding-top: 80px;
 }
 
+.white-background {
+    margin: 50px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-bottom: 500px;
+    background-color: #eeeeee;
+}
 
+.resize {
+    margin-bottom: 0px;
+}
 
 .c7-graph {
     margin-left: 80px;
     font-size: 20px;
     font-style: normal;
+    margin-bottom: 27px;
 }
 
 .graph-column2 {
@@ -230,7 +260,7 @@
     width: 500px;
     height: 6px;
     float: left;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
 }
 
 c7.block {
@@ -245,7 +275,13 @@ c7.block {
     box-sizing: border-box;
     font-size: 30px;
     font-weight: 300;
+    margin-bottom: 10px;
     text-transform: none;
+}
+
+.columns{
+    float: left;
+    width: 50%;
 }
 
 .btn-column {
@@ -254,6 +290,10 @@ c7.block {
 
 .text-center {
     text-align: center;
+}
+
+.text-hover {
+    margin-bottom: 10px;
 }
 
 .text-hover:hover {
@@ -306,6 +346,10 @@ li a {
     margin-bottom: 40px;
 }
 
+.spacing2 {
+    margin-bottom: 50px;
+}
+
 .image-list li img {
     position: relative;
     margin: 20px;
@@ -315,7 +359,13 @@ li a {
     overflow: hidden;
 }
 
-
+.board {
+    margin: 0px;
+    width: 450px;
+    margin-bottom: 25px;
+    height: 150px;
+    background-color: #eee;
+}
 
 a {
     text-decoration: none;
