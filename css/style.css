@@ -41,6 +41,13 @@ body {
     border-radius: 40px;
     margin: 10px 8px;
     text-transform: uppercase;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+    transition: box-shadow 500ms;
+    -webkit-transition: box-shadow 500ms ease;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 15px 1px rgba(0,0,0,0.5);
 }
 
 .button-orange {
@@ -53,7 +60,6 @@ body {
     background-color: white;
     border: 2px solid white;
     -webkit-text-fill-color: black;
-
 }
 
 .column {
@@ -98,6 +104,14 @@ body {
 
 .block {
     padding-top: 100px;
+    margin-bottom: 20px;
+    color: #666666;
+    font-family: Merriweather;
+    font-style: italic;
+}
+
+.block2 {
+    padding-top: 40px;
     margin-bottom: 20px;
     color: #666666;
     font-family: Merriweather;
@@ -163,15 +177,15 @@ body {
     max-width: 940px;
 }
 
-.container1 {
+.blue {
     background-color:#24487d; 
 }
 
-.container5 {
+.purple {
     background-color: #4d3699;
 }
 
-.container6{
+.white {
     background-color: #f8f8f8;
 }
 
@@ -187,6 +201,12 @@ body {
     font-size: 80%;
     text-transform: uppercase;
     letter-spacing: 0.5em;
+}
+
+.foot-title {
+    color: #333333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .context {
@@ -237,6 +257,7 @@ body {
 }
 
 .c7-graph {
+    margin-top: 7px;
     margin-left: 80px;
     font-size: 20px;
     font-style: normal;
@@ -263,9 +284,30 @@ body {
     margin-bottom: 18px;
 }
 
-c7.block {
-    float: left;
+.number {
+    font-size: 30px;
+    margin-top: 55px;
+    margin-left: 20px;
+    color: #333333;
+
+}
+
+.rescale {
+    width: 120%;
+}
+
+.people {
+    color: #333333;
+    margin-top: 40px;
     text-align: left;
+}
+
+.c7-block {
+    padding-top: 110px;
+    margin-bottom: 20px;
+    color: #666666;
+    font-family: Merriweather;
+    font-style: italic;
 }
 
 .c7-text {
@@ -284,6 +326,15 @@ c7.block {
     width: 50%;
 }
 
+.recolor {
+    color: #333333;
+    margin-right: 80px;
+}
+
+.recolord {
+    background-color: #365e99;
+}
+
 .btn-column {
     margin: 0;
 }
@@ -299,7 +350,6 @@ c7.block {
 .text-hover:hover {
     color:#ffffff;
 }
-
 
 ul {
     list-style-type: none;
@@ -340,6 +390,24 @@ li a {
     margin-top: 10px;
     border-bottom: 1px solid #eee;
     margin-bottom: 30px;
+}
+
+.thumbnails img {
+    border: solid 2px #E8E8E8;
+    padding: 15px;
+    width: 160px; 
+}
+
+.thumbnails:hover img {
+    opacity: 0.6;
+    transform: scale(0.92);
+}
+
+  
+.thumbnails:hover img:hover {
+    opacity: 1;
+    transform: scale(1) rotate(2deg);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
 
 .spacing {
@@ -391,4 +459,65 @@ a {
 
 .c3-column2 a:hover {
     color: white;
+}
+
+#modal {
+    width: 100%;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#modal .shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+#modal .content {
+    position: relative;
+    max-width: 100%;
+    width: 600px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    padding: 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    z-index: 11;
+}
+
+#modal .content .button-wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
+#modal .content .button-wrapper .close {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(../images/baseline-close-24px.svg) top right no-repeat;
+    text-align: right;
+    outline: none;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+#modal .content .button-wrapper .close:hover {
+    opacity: 1;
 }
